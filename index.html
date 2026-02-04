@@ -4,240 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO & Link Preview Settings (Open Graph) -->
-    <title>Από τη Βραχυχρόνια Μίσθωση στη σιγουριά της Μακροχρόνιας, με την υπογραφή της Imberal</title>
-    <meta name="description" content="Εξειδικευμένη διαχείριση ακινήτων από την Imberal. Μετατρέψτε το ακίνητό σας σε μια ασφαλή πηγή εισοδήματος.">
+    <!-- Preview Settings for Viber, WhatsApp, Facebook (Open Graph) -->
+    <title>η Imberal ενεργοποιεί το Plan B: Ενοικίαση ή Πώληση ?</title>
+    <meta name="description" content="Επαγγελματική διαχείριση ακινήτων, εγγυημένη ενοικίαση και στρατηγική πώληση με την υπογραφή της Imberal.">
     
-    <!-- Facebook / WhatsApp / LinkedIn Preview -->
+    <meta property="og:title" content="η Imberal ενεργοποιεί το Plan B: Ενοικίαση ή Πώληση ?">
+    <meta property="og:description" content="Αξιόπιστοι ενοικιαστές, οικονομικός έλεγχος και 360° τεχνολογία πώλησης από την Imberal Property Management.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Από τη Βραχυχρόνια Μίσθωση στη σιγουριά της Μακροχρόνιας, με την υπογραφή της Imberal">
-    <meta property="og:description" content="Αξιόπιστοι ενοικιαστές, οικονομικός έλεγχος και άμεση εξυπηρέτηση από την Imberal Property Management.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80">
-    
-    <!-- Twitter Preview -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Από τη Βραχυχρόνια Μίσθωση στη σιγουριά της Μακροχρόνιας, με την υπογραφή της Imberal">
+    <meta property="og:site_name" content="Imberal Property Management">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #f8fafc;
-        }
-        .imberal-blue { color: #0f172a; }
-        .imberal-bg-dark { background-color: #0f172a; }
+        /* Reset styles for email clients */
+        body { margin: 0; padding: 0; min-width: 100%; font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; color: #1e293b; }
+        table { border-spacing: 0; width: 100%; }
+        td { padding: 0; }
+        img { border: 0; display: block; }
+        .wrapper { width: 100%; table-layout: fixed; background-color: #f8fafc; padding-bottom: 40px; padding-top: 40px; }
+        .main { background-color: #ffffff; margin: 0 auto; width: 100%; max-width: 600px; border-spacing: 0; color: #1e293b; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
         
-        .modern-header {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-        }
-        @media (min-width: 768px) {
-            .modern-header {
-                clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
-            }
-        }
-
-        /* Maximum Animated Icons Motion */
-        @keyframes float-extreme {
-            0% { transform: translateY(0px) rotate(0deg) scale(1); }
-            25% { transform: translateY(-20px) rotate(2deg) scale(1.08); }
-            50% { transform: translateY(-5px) rotate(-1deg) scale(1.02); }
-            75% { transform: translateY(-15px) rotate(1deg) scale(1.05); }
-            100% { transform: translateY(0px) rotate(0deg) scale(1); }
-        }
-        .animate-icon-strong {
-            animation: float-extreme 4s ease-in-out infinite;
-        }
-        .icon-delay-1 { animation-delay: 0.4s; }
-        .icon-delay-2 { animation-delay: 0.8s; }
-        .icon-delay-3 { animation-delay: 1.2s; }
+        /* Typography & Components */
+        .header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 50px 20px; text-align: center; }
+        .content { padding: 40px 35px; line-height: 1.6; }
+        .button-container { padding: 25px 0; text-align: center; }
+        .button { background-color: #2563eb; color: #ffffff !important; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: 800; display: inline-block; font-size: 18px; box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3); }
+        .feature-box { background-color: #f8fafc; border-radius: 20px; padding: 25px; margin-bottom: 15px; border: 1px solid #e2e8f0; transition: all 0.3s ease; }
+        .footer { padding: 45px; text-align: center; font-size: 13px; color: #94a3b8; background-color: #0f172a; }
         
-        .card-glow:hover {
-            box-shadow: 0 30px 40px -10px rgba(37, 99, 235, 0.15);
-            transform: translateY(-8px);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        /* Keyframe Animations for Icons */
+        @keyframes pulse-icon {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15) translateY(-5px); }
+            100% { transform: scale(1); }
         }
-
-        .contact-font {
-            font-family: 'Inter', sans-serif;
+        .animate-icon {
+            display: inline-block;
+            animation: pulse-icon 3s ease-in-out infinite;
         }
+        .delay-1 { animation-delay: 0.5s; }
+        .delay-2 { animation-delay: 1s; }
+        .delay-3 { animation-delay: 1.5s; }
 
-        /* Prevent text wrapping and ensure it stays on one line */
-        .no-wrap {
-            white-space: nowrap;
-        }
-
-        @media print {
-            .no-print { display: none; }
-            body { background-color: white; }
-            .modern-header { clip-path: none; background: #0f172a !important; }
-            .shadow-2xl { box-shadow: none !important; border: 1px solid #e2e8f0; }
+        @media screen and (max-width: 600px) {
+            .content { padding: 30px 20px; }
+            .main { border-radius: 0; }
         }
     </style>
 </head>
-<body class="p-2 md:p-8 lg:p-12 flex flex-col items-center">
+<body>
+    <center class="wrapper">
+        <table class="main" role="presentation">
+            <!-- Header with Text Logo -->
+            <tr>
+                <td class="header">
+                    <h1 style="margin: 0; color: #ffffff; font-size: 36px; letter-spacing: -1px; font-style: italic; font-weight: 900; text-transform: uppercase;">IMBERAL</h1>
+                    <p style="margin: 8px 0 0 0; color: #3b82f6; font-size: 11px; letter-spacing: 6px; text-transform: uppercase; font-weight: 700;">Property Management</p>
+                </td>
+            </tr>
 
-    <!-- Expanded Flyer Container -->
-    <div class="max-w-5xl w-full bg-white shadow-2xl overflow-hidden rounded-3xl md:rounded-[3rem] border border-gray-100">
+            <!-- Content Area -->
+            <tr>
+                <td class="content">
+                    <h2 style="color: #0f172a; font-size: 26px; margin-top: 0; font-weight: 800;">Αγαπητέ Ιδιοκτήτη,</h2>
+                    <p style="font-size: 17px; color: #475569;">
+                        Σε συνέχεια της ενημέρωσης για την απόδοση του ακινήτου σας στη βραχυχρόνια μίσθωση, γνωρίζουμε ότι κάθε επένδυση απαιτεί τη σωστή στρατηγική τη σωστή στιγμή.
+                    </p>
+                    
+                    <div style="background-color: #eff6ff; border-left: 5px solid #2563eb; padding: 22px; margin: 30px 0; border-radius: 0 15px 15px 0;">
+                        <p style="font-size: 19px; font-weight: 700; color: #1e3a8a; margin: 0; font-style: italic;">
+                            "Αν η Airbnb δεν καλύπτει τις προσδοκίες σας, η Imberal ενεργοποιεί το Plan B: Ενοικίαση ή Πώληση."
+                        </p>
+                    </div>
+
+                    <p style="font-size: 17px; color: #475569; margin-bottom: 30px;">
+                        Σας προσφέρουμε ολοκληρωμένες λύσεις για την αξιοποίηση του ακινήτου σας:
+                    </p>
+
+                    <!-- 4 Animated Benefits List -->
+                    <table role="presentation">
+                        <!-- Feature 1: Rental -->
+                        <tr>
+                            <td class="feature-box">
+                                <table role="presentation">
+                                    <tr>
+                                        <td style="width: 60px; text-align: center; vertical-align: middle;">
+                                            <span class="animate-icon" style="font-size: 32px;">🏠</span>
+                                        </td>
+                                        <td style="padding-left: 15px;">
+                                            <strong style="color: #0f172a; font-size: 16px;">Ενοικίαση με Εγγύηση</strong><br>
+                                            <span style="font-size: 14px; color: #64748b;">Αυστηρά φιλτραρισμένοι ενοικιαστές και πλήρης οικονομικός έλεγχος φερεγγυότητας.</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- Feature 2: Sale with 360 Tech -->
+                        <tr>
+                            <td class="feature-box">
+                                <table role="presentation">
+                                    <tr>
+                                        <td style="width: 60px; text-align: center; vertical-align: middle;">
+                                            <span class="animate-icon delay-1" style="font-size: 32px;">📸</span>
+                                        </td>
+                                        <td style="padding-left: 15px;">
+                                            <strong style="color: #0f172a; font-size: 16px;">Στρατηγική Πώληση & 360° Tech</strong><br>
+                                            <span style="font-size: 14px; color: #64748b;">Χρήση <strong>κάμερας 360°</strong> για εικονική περιήγηση, ελαχιστοποιώντας τα άσκοπα ραντεβού και στοχεύοντας σε ελεγμένους αγοραστές.</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- Feature 3: Action -->
+                        <tr>
+                            <td class="feature-box">
+                                <table role="presentation">
+                                    <tr>
+                                        <td style="width: 60px; text-align: center; vertical-align: middle;">
+                                            <span class="animate-icon delay-2" style="font-size: 32px;">⚡</span>
+                                        </td>
+                                        <td style="padding-left: 15px;">
+                                            <strong style="color: #0f172a; font-size: 16px;">Άμεση Κινητοποίηση</strong><br>
+                                            <span style="font-size: 14px; color: #64748b;">Ενεργοποιούμε τις διαδικασίες μίσθωσης ή πώλησης με μία μόνο κλήση.</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- Feature 4: Network -->
+                        <tr>
+                            <td class="feature-box">
+                                <table role="presentation">
+                                    <tr>
+                                        <td style="width: 60px; text-align: center; vertical-align: middle;">
+                                            <span class="animate-icon delay-3" style="font-size: 32px;">📍</span>
+                                        </td>
+                                        <td style="padding-left: 15px;">
+                                            <strong style="color: #0f172a; font-size: 16px;">Τοπική Εξειδίκευση</strong><br>
+                                            <span style="font-size: 14px; color: #64748b;">Συνεργάτες με βαθιά γνώση της αγοράς στην περιοχή σας για άμεσα αποτελέσματα.</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- Contact & CTA Card -->
+                    <div style="margin-top: 45px; padding: 35px; background-color: #0f172a; border-radius: 28px; text-align: center;">
+                        <p style="color: #3b82f6; font-size: 12px; text-transform: uppercase; font-weight: 800; margin-bottom: 12px; letter-spacing: 3px;">Υπεύθυνος Επικοινωνίας</p>
+                        <p style="color: #ffffff; font-size: 26px; font-weight: 800; margin: 0;">Ακης Καρεντζος</p>
+                        <p style="color: #94a3b8; font-size: 15px; margin-bottom: 30px;">akiskarentzos@imberal.gr</p>
+                        <div class="button-container">
+                            <a href="tel:+306934932782" class="button">ΚΛΗΣΗ: 6934932782</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td class="footer">
+                    <p style="margin: 0; font-weight: 800; color: #ffffff; font-size: 15px; letter-spacing: 1px;">IMBERAL PROPERTY MANAGEMENT</p>
+                    <p style="margin: 8px 0 25px 0; color: #64748b; font-style: italic;">Εμπιστοσύνη που χτίζεται με αποτελέσματα.</p>
+                    <p style="margin: 0;">
+                        <a href="https://imberal.gr" style="color: #3b82f6; text-decoration: none; font-weight: 800; font-size: 20px;">imberal.gr</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
         
-        <!-- Modern Header Section -->
-        <div class="modern-header relative pb-28 pt-12 px-6 md:pb-36 md:pt-20 md:px-20 text-white">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 md:mb-12">
-                <div>
-                    <span class="text-3xl md:text-5xl font-extrabold tracking-tighter uppercase italic">Imberal</span>
-                    <p class="text-[9px] md:text-[11px] tracking-[0.4em] md:tracking-[0.5em] uppercase opacity-60 mt-1">Property Management</p>
-                </div>
-                <div class="hidden md:block h-px w-32 bg-blue-500 opacity-30"></div>
-                <div class="text-right mt-4 md:mt-0">
-                    <p class="text-[10px] md:text-sm font-semibold tracking-[0.2em] md:tracking-[0.3em] text-blue-400 uppercase">Premium Solutions</p>
-                </div>
-            </div>
-
-            <div class="max-w-3xl">
-                <h1 class="text-3xl md:text-6xl font-extrabold leading-[1.2] md:leading-[1.1] mb-6 md:mb-8">
-                    Μεγιστοποιήστε την <span class="text-blue-400 underline decoration-blue-500/30 underline-offset-[8px] md:underline-offset-[12px]">Απόδοση</span> του Ακινήτου σας.
-                </h1>
-                <p class="text-base md:text-2xl font-light opacity-80 max-w-xl border-l-2 md:border-l-4 border-blue-500 pl-4 md:pl-6">
-                    Από τη Βραχυχρόνια Μίσθωση στη σιγουριά της Μακροχρόνιας, με την υπογραφή της Imberal.
-                </p>
-            </div>
-        </div>
-
-        <!-- Main Content Area -->
-        <div class="px-6 md:px-20 pb-12 md:pb-20 -mt-10 md:-mt-16 relative z-10">
-            
-            <div class="flex flex-col lg:flex-row gap-8 lg:gap-10">
-                <!-- Left Content -->
-                <div class="lg:w-[58%]">
-                    <!-- Intro Message -->
-                    <div class="bg-white p-6 md:p-10 rounded-3xl md:rounded-[2.5rem] shadow-xl md:shadow-2xl mb-8 md:mb-10 border border-gray-50/50">
-                        <h2 class="text-2xl md:text-3xl font-bold imberal-blue mb-4 leading-tight">Αξιότιμε Ιδιοκτήτη,</h2>
-                        <p class="text-gray-600 leading-relaxed text-lg md:text-xl mb-6 md:mb-8 italic font-medium">
-                            "Η απόδοση που ακούσατε για την Airbnb δεν σας καλύπτει; Έχουμε το κλειδί για την επόμενη κίνηση."
-                        </p>
-                        <p class="text-gray-500 leading-relaxed text-base md:text-lg">
-                            Στην Imberal, αν τα δεδομένα της βραχυχρόνιας μίσθωσης δεν συμβαδίζουν με τους στόχους σας, ενεργοποιούμε άμεσα το <strong>Plan B</strong>. Σας συνδέουμε με τον εξειδικευμένο συνεργάτη μας για μια εγγυημένη μακροχρόνια μίσθωση.
-                        </p>
-                    </div>
-
-                    <!-- Features Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                        <div class="p-5 md:p-6 rounded-2xl md:rounded-[2rem] border border-gray-100 bg-slate-50 card-glow transition-all">
-                            <div class="animate-icon-strong w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-xl md:rounded-[1.2rem] flex items-center justify-center mb-4 md:mb-5 shadow-xl shadow-blue-400/30">
-                                <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                            </div>
-                            <h4 class="text-base md:text-lg font-bold text-gray-800 mb-1 md:mb-2">Φιλτραρισμένοι Ενοικιαστές</h4>
-                            <p class="text-xs md:text-sm text-gray-500 italic">Ποιοτικοί ενδιαφερόμενοι, αυστηρά επιλεγμένοι για το δικό σας ακίνητο.</p>
-                        </div>
-
-                        <div class="p-5 md:p-6 rounded-2xl md:rounded-[2rem] border border-gray-100 bg-slate-50 card-glow transition-all">
-                            <div class="animate-icon-strong icon-delay-1 w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-xl md:rounded-[1.2rem] flex items-center justify-center mb-4 md:mb-5 shadow-xl shadow-blue-400/30">
-                                <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                            </div>
-                            <h4 class="text-base md:text-lg font-bold text-gray-800 mb-1 md:mb-2">Οικονομική Ασφάλεια</h4>
-                            <p class="text-xs md:text-sm text-gray-500 italic">Ενδελεχής οικονομικός έλεγχος για τη διασφάλιση των πληρωμών.</p>
-                        </div>
-
-                        <div class="p-5 md:p-6 rounded-2xl md:rounded-[2rem] border border-gray-100 bg-slate-50 card-glow transition-all">
-                            <div class="animate-icon-strong icon-delay-2 w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-xl md:rounded-[1.2rem] flex items-center justify-center mb-4 md:mb-5 shadow-xl shadow-blue-400/30">
-                                <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                            </div>
-                            <h4 class="text-base md:text-lg font-bold text-gray-800 mb-1 md:mb-2">Άμεση Δράση</h4>
-                            <p class="text-xs md:text-sm text-gray-500 italic">Με μία κλήση, ο τοπικός συνεργάτης μας ξεκινά τη διαδικασία μίσθωσης.</p>
-                        </div>
-
-                        <div class="p-5 md:p-6 rounded-2xl md:rounded-[2rem] border border-gray-100 bg-slate-50 card-glow transition-all">
-                            <div class="animate-icon-strong icon-delay-3 w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-xl md:rounded-[1.2rem] flex items-center justify-center mb-4 md:mb-5 shadow-xl shadow-blue-400/30">
-                                <svg class="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V8.5a.5.5 0 011 0V5a2 2 0 00-2-2h-4.5A2.5 2.5 0 0010 5.5V7a1 1 0 01-1 1H7.5a1 1 0 01-1-1V4.5a1 1 0 00-1-1H4.5a1 1 0 00-1 1v.5a.5.5 0 01-1 0V4a2 2 0 012-2h2.5"></path></svg>
-                            </div>
-                            <h4 class="text-base md:text-lg font-bold text-gray-800 mb-1 md:mb-2">Τοπικό Δίκτυο</h4>
-                            <p class="text-xs md:text-sm text-gray-500 italic">Εξειδικευμένοι συνεργάτες ανά περιοχή για μέγιστη αποτελεσματικότητα.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Expanded Right Sidebar / Contact -->
-                <div class="lg:w-[42%]">
-                    <div class="lg:sticky lg:top-10">
-                        <div class="bg-gray-900 rounded-3xl md:rounded-[3rem] p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
-                            <!-- Decorative Circle -->
-                            <div class="absolute -right-10 -bottom-10 w-40 md:w-56 h-40 md:h-56 bg-blue-600 opacity-10 rounded-full"></div>
-                            
-                            <h3 class="text-xs md:text-sm font-bold mb-8 md:mb-10 relative z-10 uppercase tracking-[0.3em] md:tracking-[0.4em] text-blue-400 border-b border-white/10 pb-4 md:pb-6">Επικοινωνία</h3>
-                            
-                            <div class="mb-8 md:mb-12 relative z-10">
-                                <p class="text-[10px] md:text-xs text-gray-400 uppercase font-bold tracking-[0.2em] md:tracking-[0.25em] mb-2 md:mb-3 opacity-60">Υπεύθυνος Σύμβουλος</p>
-                                <p class="text-2xl md:text-4xl font-extrabold tracking-tight">Ακης Καρεντζος</p>
-                            </div>
-
-                            <div class="space-y-6 md:space-y-8 relative z-10 contact-font">
-                                <!-- Email Unit -->
-                                <div class="group">
-                                    <div class="flex items-center">
-                                        <div class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-white/5 flex items-center justify-center mr-3 md:mr-5 group-hover:bg-blue-600 transition-all duration-300">
-                                            <svg class="w-4 h-4 md:w-6 md:h-6 text-blue-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 012 2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7a2 2 0 012 2z"></path></svg>
-                                        </div>
-                                        <div class="flex flex-col min-w-0">
-                                            <p class="text-[9px] md:text-[10px] uppercase font-bold text-gray-500 mb-0.5 md:mb-1 tracking-widest">Email Address</p>
-                                            <span class="text-[12px] sm:text-[14px] md:text-lg font-medium opacity-95 group-hover:text-blue-400 transition-colors no-wrap overflow-hidden text-ellipsis">akiskarentzos@imberal.gr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Call Button Unit -->
-                                <a href="tel:+306934932782" class="flex items-center group cursor-pointer bg-white/5 p-4 md:p-6 rounded-2xl md:rounded-[2rem] hover:bg-blue-600 transition-all duration-500 border border-white/10 hover:border-transparent shadow-xl">
-                                    <div class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-blue-500/20 flex items-center justify-center mr-3 md:mr-5 group-hover:bg-white transition-all duration-300 flex-shrink-0">
-                                        <svg class="w-5 h-5 md:w-7 md:h-7 text-blue-400 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                                    </div>
-                                    <div class="no-wrap min-w-0">
-                                        <p class="text-[9px] md:text-[11px] uppercase font-black text-blue-400 group-hover:text-white mb-0.5 md:mb-1 tracking-[0.1em] md:tracking-[0.2em]">Άμεση Κλήση</p>
-                                        <span class="text-lg md:text-2xl font-black tracking-tighter text-white">6934932782</span>
-                                    </div>
-                                </a>
-
-                                <!-- Website Unit -->
-                                <div class="flex items-center group border-t border-white/5 pt-6 md:pt-10">
-                                    <div class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-white/5 flex items-center justify-center mr-3 md:mr-5 group-hover:bg-blue-600 transition-all duration-300">
-                                        <svg class="w-4 h-4 md:w-6 md:h-6 text-blue-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-                                    </div>
-                                    <span class="text-base md:text-xl font-bold tracking-widest lowercase italic no-wrap">imberal.gr</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- QR Unit -->
-                        <div class="mt-6 md:mt-8 bg-blue-50 p-6 md:p-8 rounded-3xl md:rounded-[2.5rem] border border-blue-100 flex items-center justify-between shadow-sm">
-                            <div class="pr-2 md:pr-4">
-                                <p class="text-[10px] md:text-[12px] font-black text-blue-600 uppercase mb-1 md:mb-2 tracking-widest">Digital Entry</p>
-                                <p class="text-[11px] md:text-[13px] text-gray-500 leading-snug font-medium">Σκανάρετε για να ανακαλύψετε το portfolio μας.</p>
-                            </div>
-                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://imberal.gr" alt="QR Code" class="rounded-xl md:rounded-2xl shadow-md w-14 h-14 md:w-20 md:h-20 bg-white p-1 md:p-1.5 flex-shrink-0">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Professional Footer -->
-        <div class="imberal-bg-dark p-6 md:p-10 flex flex-col md:flex-row justify-between items-center px-6 md:px-20 text-white text-[9px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold border-t border-white/5 text-center md:text-left">
-            <div class="flex items-center">
-                <span class="opacity-50">Imberal Property Management © 2024</span>
-            </div>
-            <div class="mt-4 md:mt-0 flex gap-6">
-                <span class="text-blue-400 italic">Εμπιστοσύνη που χτίζεται με αποτελέσματα.</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Print Control -->
-    <div class="mt-8 md:mt-16 no-print">
-        <button onclick="window.print()" class="group bg-gray-900 text-white px-8 md:px-12 py-3 md:py-5 rounded-full font-black text-base md:text-lg hover:bg-blue-600 transition-all shadow-2xl flex items-center transform hover:scale-105 active:scale-95">
-            <svg class="w-5 h-5 md:w-6 md:h-6 mr-3 md:mr-4 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
-            Εκτύπωση Εντύπου
-        </button>
-    </div>
-
+        <!-- Bottom Spacing -->
+        <table role="presentation">
+            <tr>
+                <td style="padding: 25px; text-align: center;">
+                    <p style="font-size: 11px; color: #94a3b8; margin: 0;">Λάβατε αυτό το email ως ενημέρωση για την ιδιοκτησία σας από την Imberal.</p>
+                </td>
+            </tr>
+        </table>
+    </center>
 </body>
 </html>
